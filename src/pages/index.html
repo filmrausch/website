@@ -16,8 +16,9 @@
   <main>
     <div class="carousel" data-flickity>
       {{#data}}
-      <div class="movie-card">
-
+      <div class="movie card">
+        <h2 class="movie__title">{{name}} ({{year}})</h2>
+        <img class="movie__poster" src="{{ poster }}" alt="poster {{name}}">
       </div>
       {{/data}}
     </div>

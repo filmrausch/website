@@ -1,16 +1,18 @@
 {
   "meta": {
     "term": "Wintersemester 2018/19",
-    "HVs": ["Mark Kvetny", "Henrike Sommer"]
+    "HVs": "Henrike Sommer, Juliane Baatsch und Mark Kvetny"
   },
   "data": [
     {
-      "name": "movie1",
-      "year": 2017
+      "name": "The Florida Project",
+      "year": 2017,
+      "poster": "https://image.tmdb.org/t/p/w400_and_h600_bestv2/bnSTP1PY2fDyat0eUa4QouuGV7F.jpg"
     },
     {
-      "name": "movie2",
-      "year": 2016
+      "name": "Battle of the Sexes",
+      "year": 2017,
+      "poster": "https://image.tmdb.org/t/p/w440_and_h660_bestv2/fWy0A3VojTCb0S2MKtEJjpquubF.jpg"
     }
   ]
 }
