@@ -4,8 +4,6 @@
 @import "../shared/main.scss";
 
 .carousel {
-  display: flex;
-  justify-content: center;
   padding: 20px auto;
   width: 90%;
   max-width: 960px;
@@ -14,9 +12,9 @@
 
 .movie-card {
   background: #fff;
-  padding: 200px 0;
+  padding: 250px 0;
   width: 100%;
-  margin: 50px 10px;
+  margin: 50px 30px;
   border-radius: 5px;
   box-shadow: 0 3px 6px rgba(#000, .12);
 }
