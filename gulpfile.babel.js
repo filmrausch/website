@@ -2,6 +2,7 @@ import gulp from 'gulp'
 import mustache from 'gulp-mustache'
 import browserSync from 'browser-sync'
 import sass from 'gulp-sass'
+import babel from 'gulp-babel'
 
 const server = browserSync.create()
 
@@ -15,6 +16,10 @@ const paths = {
     src: './src/pages/**/*.scss',
     shared: './src/shared/**/*.scss',
     dest: './dist'
+  },
+  js: {
+    src: './src/pages/**/*.js',
+    dest: './dist'
   }
 }
 
@@ -27,6 +32,11 @@ const scss = () =>
   gulp.src(paths.sass.src)
   .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
   .pipe(gulp.dest(paths.sass.dest))
+
+const js = () =>
+  gulp.src(paths.js.src)
+  .pipe(babel())
+  .pipe(gulp.dest(paths.js.dest))
 
 const reload = done => {
   server.reload()
@@ -45,6 +55,7 @@ const serve = done => {
 const watch = () => {
   gulp.watch([paths.html.src, paths.html.shared], gulp.series(html, reload))
   gulp.watch([paths.sass.src, paths.sass.shared], gulp.series(scss, reload))
+  gulp.watch(paths.js.src, gulp.series(js, reload))
 }
 
-gulp.task('dev', gulp.series(html, scss, serve, watch))
+gulp.task('dev', gulp.series(html, scss, js, serve, watch))
