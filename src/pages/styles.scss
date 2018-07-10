@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:700|Open+Sans');
+@import "../shared/header.scss";
+@import "../shared/footer.scss";
+@import "../shared/main.scss";
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  padding: 20px auto;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.movie-card {
+  background: #fff;
+  padding: 200px 0;
+  width: 100%;
+  margin: 50px 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(#000, .12);
+}
