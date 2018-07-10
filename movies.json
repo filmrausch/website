@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "term": "Wintersemester 2018/19",
+    "HVs": ["Mark Kvetny", "Henrike Sommer"]
+  },
+  "data": [
+    {
+      "name": "movie1",
+      "year": 2017
+    },
+    {
+      "name": "movie2",
+      "year": 2016
+    }
+  ]
+}
