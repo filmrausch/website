@@ -8,7 +8,7 @@ dateNodes.forEach(elem => {
 
 const flkty = new Flickity( '.carousel', {
   initialIndex: startIndex(dates)
-});
+})
 
 /* helper functions */
 
