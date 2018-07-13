@@ -1,8 +1,9 @@
 import gulp from 'gulp'
-import mustache from 'gulp-mustache'
+import ejs from 'gulp-ejs'
 import browserSync from 'browser-sync'
 import sass from 'gulp-sass'
 import babel from 'gulp-babel'
+import movies from './movies.json'
 
 const server = browserSync.create()
 
@@ -25,7 +26,7 @@ const paths = {
 
 const html = () =>
   gulp.src(paths.html.src)
-    .pipe(mustache('movies.json'))
+    .pipe(ejs(movies))
     .pipe(gulp.dest(paths.html.dest))
 
 const scss = () =>

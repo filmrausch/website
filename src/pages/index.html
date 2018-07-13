@@ -11,24 +11,28 @@
 </head>
 
 <body>
-  {{> ../shared/header.html }}
+  
+  <%- include('../shared/header.html') %>
 
   <main>
     <div class="carousel">
-      {{#data}}
+      <% data.forEach(movie => { %>
       <div class="movie card">
-        <p class="movie__date" data-date="{{date}}"></p>
-        <h2 class="movie__title">{{name}} ({{year}})</h2>
-        <img class="movie__poster" src="{{ poster }}" alt="poster {{name}}">
-        <p class="movie__description">{{description}}</p>
+        <p class="movie__date"><%= new Date(movie.date).toLocaleDateString("en-GB") %></p>
+        <h2 class="movie__title"><%= movie.name %> (<%= movie.year %>)</h2>
+        <img class="movie__poster" src="<%= movie.poster %>" alt="poster <%= movie.name %>">
+        <p class="movie__description"><%= movie.description %></p>
       </div>
-      {{/data}}
+      <% }) %>
     </div>
   </main>
 
-  {{> ../shared/footer.html }}
+  <%- include('../shared/footer.html') %>
 </body>
 
+<script>
+  var dates = <%-JSON.stringify(data.map(movie => movie.date))%>
+</script>
 <script src="https://unpkg.com/flickity@2.1.2/dist/flickity.pkgd.min.js"></script>
 <script src="script.js"></script>
 
