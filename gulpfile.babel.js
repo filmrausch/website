@@ -9,8 +9,8 @@ const server = browserSync.create()
 
 const paths = {
   html: {
-    src: './src/pages/**/*.html',
-    shared: './src/shared/**/*.html',
+    src: './src/pages/**/*.ejs',
+    shared: './src/shared/**/*.ejs',
     dest: './dist'
   },
   sass: {
@@ -26,7 +26,7 @@ const paths = {
 
 const html = () =>
   gulp.src(paths.html.src)
-    .pipe(ejs(movies))
+    .pipe(ejs(movies, {}, { ext: '.html' }))
     .pipe(gulp.dest(paths.html.dest))
 
 const scss = () =>
