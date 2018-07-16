@@ -20,7 +20,7 @@
       <div class="movie card">
         <p class="movie__date"><%= new Date(movie.date).toLocaleDateString("en-GB") %></p>
         <h2 class="movie__title"><%= movie.name %> (<%= movie.year %>)</h2>
-        <img class="movie__poster" src="<%= movie.poster %>" alt="poster <%= movie.name %>">
+        <img class="movie__poster" data-flickity-lazyload-src="<%= movie.poster %>" alt="poster <%= movie.name %>">
         <p class="movie__description"><%= movie.description %></p>
       </div>
       <% }) %>
