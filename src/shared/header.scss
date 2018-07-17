@@ -2,7 +2,7 @@ header {
   background: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: relative;
   box-shadow: 0 3px 6px rgba(#000, .06);
 }
@@ -20,11 +20,21 @@ header {
 }
 
 .nav {
-  padding: 20px;
-  &__link {
-    color: inherit;
-    text-decoration: none;
-    padding: 0 10px;
-    font: 1.1em 'Lato', sans-serif;
+  display: none;
+}
+
+@media screen and (min-width: 699px) {
+  header {
+    justify-content: space-between;
+  }
+  .nav {
+    display: inline;
+    padding: 20px;
+    &__link {
+      color: inherit;
+      text-decoration: none;
+      padding: 0 10px;
+      font: 1.1em 'Lato', sans-serif;
+    }
   }
 }
