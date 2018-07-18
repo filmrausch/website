@@ -1,7 +1,9 @@
 const flkty = new Flickity( '.carousel', {
   initialIndex: startIndex(dates.map(date => addHours(new Date(date), 20))),
   lazyLoad: 1,
-  hash: true
+  prevNextButtons: false,
+  adaptiveHeight: true,
+  hash: true,
 })
 
 flkty.on('select', i => {
