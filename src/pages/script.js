@@ -4,6 +4,17 @@ const flkty = new Flickity( '.carousel', {
   hash: true
 })
 
+flkty.on('select', i => {
+  document.querySelectorAll('.controls__link').forEach(e => e.classList.remove('active'))
+  document.querySelectorAll('.controls__link')[i].classList.add('active')
+})
+
+document.getElementById('btn-prev').addEventListener('click', () => {
+  flkty.previous()
+})
+document.getElementById('btn-next').addEventListener('click', () => {
+  flkty.next()
+})
 /* helper functions */
 
 function startIndex(dates) {

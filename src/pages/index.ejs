@@ -15,18 +15,21 @@
   <%- include('../shared/header.ejs') %>
 
   <main>
+    <div class="controls">
+      <button class="controls__button" id="btn-prev">back</button>
       <% data.forEach((movie, i) => { %>
-        <a href="#cell<%=i+1%>">
-          <%= new Date(movie.date).toLocaleDateString("en-GB", {
-            month: "2-digit",
-            day: "numeric"
-          }).replace("/", ".")%>
-        </a>
-      <% }) %>
-      
+      <a class="controls__link" href="#movie<%=i+1%>">
+        <%= new Date(movie.date).toLocaleDateString("en-GB", {
+          month: "2-digit",
+          day: "numeric"
+        }).replace("/", ".")%>
+      </a>
+      <% }) %>  
+      <button class="controls__button" id="btn-next">forward</button>
+    </div>
     <div class="carousel">
       <% data.forEach((movie, i) => { %>
-      <div class="movie card" id="cell<%= i+1 %>">
+      <div class="movie card" id="movie<%= i+1 %>">
         <h2 class="movie__title">
            <span><%= movie.name %></span>
            <span class="movie__title--year">(<%= movie.year %>)</span>
