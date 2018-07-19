@@ -4,6 +4,7 @@ import browserSync from 'browser-sync'
 import sass from 'gulp-sass'
 import babel from 'gulp-babel'
 import movies from './movies.json'
+import ddmm from './util/ddmm'
 
 const server = browserSync.create()
 
@@ -26,18 +27,18 @@ const paths = {
 
 const html = () =>
   gulp.src(paths.html.src)
-    .pipe(ejs(movies, {}, { ext: '.html' }))
+    .pipe(ejs({ ...movies, ddmm }, {}, { ext: '.html' }))
     .pipe(gulp.dest(paths.html.dest))
 
 const scss = () =>
   gulp.src(paths.sass.src)
-  .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-  .pipe(gulp.dest(paths.sass.dest))
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(gulp.dest(paths.sass.dest))
 
 const js = () =>
   gulp.src(paths.js.src)
-  .pipe(babel())
-  .pipe(gulp.dest(paths.js.dest))
+    .pipe(babel())
+    .pipe(gulp.dest(paths.js.dest))
 
 const reload = done => {
   server.reload()
