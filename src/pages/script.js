@@ -6,7 +6,7 @@ const flkty = new Flickity( '.carousel', {
 })
 
 flkty.on('select', i => {
-  document.querySelectorAll('.controls__link').forEach(e => e.classList.remove('active'))
+  document.querySelectorAll('.controls__link').forEach(e => { e.classList.remove('active') })
   document.querySelectorAll('.controls__link')[i].classList.add('active')
 })
 
@@ -16,6 +16,12 @@ document.getElementById('btn-prev').addEventListener('click', () => {
 document.getElementById('btn-next').addEventListener('click', () => {
   flkty.next()
 })
+document.querySelectorAll('.controls__link').forEach((e, i) => {
+  e.addEventListener('click', () => {
+    flkty.select(i)
+  })
+})
+
 /* helper functions */
 
 function startIndex(dates) {

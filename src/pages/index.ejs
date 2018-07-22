@@ -18,16 +18,16 @@
   <main>
     <div class="controls">
       <button class="controls__button" id="btn-prev">back</button>
-      <% data.forEach((movie, i) => { %>
-      <a class="controls__link" href="#movie<%=i+1%>">
+      <% data.forEach(movie => { %>
+      <button class="controls__link">
         <%= ddmm(new Date(movie.date))%>
-      </a>
+      </button>
       <% }) %>  
       <button class="controls__button" id="btn-next">forward</button>
     </div>
     <div class="carousel">
-      <% data.forEach((movie, i) => { %>
-      <div class="movie card" id="movie<%= i+1 %>">
+      <% data.forEach(movie => { %>
+      <div class="movie card">
         <h2 class="movie__title">
            <span><%= movie.name %></span>
            <span class="movie__title--year">(<%= movie.year %>)</span>
