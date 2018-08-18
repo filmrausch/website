@@ -1,5 +1,6 @@
 import gulp from 'gulp'
 import ejs from 'gulp-ejs'
+import del from 'del'
 import browserSync from 'browser-sync'
 import sass from 'gulp-sass'
 import babel from 'gulp-babel'
@@ -54,10 +55,12 @@ const serve = done => {
   done()
 }
 
+const clean = () => del('./dist')
+
 const watch = () => {
   gulp.watch([paths.html.src, paths.html.shared], gulp.series(html, reload))
   gulp.watch([paths.sass.src, paths.sass.shared], gulp.series(scss, reload))
   gulp.watch(paths.js.src, gulp.series(js, reload))
 }
 
-gulp.task('dev', gulp.series(html, scss, js, serve, watch))
+gulp.task('dev', gulp.series(clean, html, scss, js, serve, watch))
