@@ -81,12 +81,17 @@
     grid-template: 'poster title' 'poster description';
     grid-template-columns: 33% auto;
     grid-template-rows: auto 1fr;
+    padding: 40px 30px;
     &__title {
       margin-top: 10px;
       font-size: 3em;
     }
     &__description {
       margin-top: 20px;
+    }
+    &__poster {
+      max-width: calc(100% - 30px);
+      margin: 0 20px 0 10px;
     }
   }
 }
