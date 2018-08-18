@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:700|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:700|Open+Sans');
 @import "../shared/header.scss";
 @import "../shared/footer.scss";
 @import "../shared/main.scss";
@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   &__link {
+    color: #ccc;
     font-size: 1em;
     background: transparent;
     cursor: pointer;
@@ -18,8 +19,9 @@
     box-sizing: border-box;
   }
   &__link.active {
-    border: 3px solid #282D33;
     transition: all 0.3s;
+    background: #232323;
+    box-shadow: 1px 3px 6px rgba(#000, .12);
   }
   &__link:not(.active) {
     display: none;
@@ -48,7 +50,8 @@
   width: 90%;
   grid-column-gap: 25px;
   &__title {
-    font: 1.6em 'Lato' bold;
+    font: 2em 'Yantramanav';
+    font-weight: 700;
     line-height: 1em;
     margin: 0;
     grid-area: title;
@@ -72,7 +75,7 @@
   .carousel {
     width: 90%;
     max-width: 960px;
-    margin: 0 auto;  
+    margin: 0 auto;
   }
   .movie {
     grid-template: 'poster title' 'poster description';
@@ -80,7 +83,7 @@
     grid-template-rows: auto 1fr;
     &__title {
       margin-top: 10px;
-      font-size: 2.25em;
+      font-size: 3em;
     }
     &__description {
       margin-top: 20px;

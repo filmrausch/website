@@ -29,7 +29,7 @@
       <% data.forEach(movie => { %>
       <div class="movie card">
         <h2 class="movie__title">
-           <span><%= movie.name %></span>
+           <span class="movie__title--title"><%= movie.name %></span>
            <span class="movie__title--year">(<%= movie.year %>)</span>
         </h2>
         <img class="movie__poster" data-flickity-lazyload-src="<%= movie.poster %>" alt="poster <%= movie.name %>">
