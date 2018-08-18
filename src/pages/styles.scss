@@ -34,9 +34,8 @@
 
 .card {
   background: #fff;
-  width: 100%;
-  border-radius: 5px;
-  box-shadow: 0 3px 6px rgba(#000, .12);
+  border-radius: 2px;
+  box-shadow: 1px 3px 6px rgba(#000, .24);
 }
 
 .movie {
@@ -61,6 +60,7 @@
     }
   }
   &__poster {
+    box-shadow: 1px 3px 6px rgba(#000, .12);
     border-radius: 3px;
     max-width: 100%;
     grid-area: poster;
