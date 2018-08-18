@@ -64,3 +64,4 @@ const watch = () => {
 }
 
 gulp.task('dev', gulp.series(clean, html, scss, js, serve, watch))
+gulp.task('build', gulp.series(clean, html, scss, js))
