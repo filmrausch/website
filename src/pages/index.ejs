@@ -17,13 +17,17 @@
 
   <main>
     <div class="controls">
-      <button class="controls__button" id="btn-prev">back</button>
+      <button class="controls__button" id="btn-prev">
+        <img src="assets/icons/back.svg">
+      </button>
       <% data.forEach(movie => { %>
       <button class="controls__link">
         <%= ddmm(new Date(movie.date))%>
       </button>
       <% }) %>  
-      <button class="controls__button" id="btn-next">forward</button>
+      <button class="controls__button" id="btn-next">
+        <img src="assets/icons/forward.svg">
+      </button>
     </div>
     <div class="carousel">
       <% data.forEach(movie => { %>

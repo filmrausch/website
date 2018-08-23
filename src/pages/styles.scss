@@ -26,6 +26,11 @@
   &__link:not(.active) {
     display: none;
   }
+  &__button {
+    background: transparent;
+    border: none;
+    outline: none;
+  }
 }
 
 .carousel {
