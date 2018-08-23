@@ -23,6 +23,10 @@ const paths = {
   js: {
     src: './src/pages/**/*.js',
     dest: './dist'
+  },
+  assets: {
+    src: './src/assets/**/*',
+    dest: './dist/assets'
   }
 }
 
@@ -40,6 +44,10 @@ const js = () =>
   gulp.src(paths.js.src)
     .pipe(babel())
     .pipe(gulp.dest(paths.js.dest))
+
+const assets = () =>
+  gulp.src(paths.assets.src)
+    .pipe(gulp.dest(paths.assets.dest))
 
 const reload = done => {
   server.reload()
@@ -61,7 +69,8 @@ const watch = () => {
   gulp.watch([paths.html.src, paths.html.shared], gulp.series(html, reload))
   gulp.watch([paths.sass.src, paths.sass.shared], gulp.series(scss, reload))
   gulp.watch(paths.js.src, gulp.series(js, reload))
+  gulp.watch(paths.assets.src, gulp.series(assets, reload))
 }
 
-gulp.task('dev', gulp.series(clean, html, scss, js, serve, watch))
-gulp.task('build', gulp.series(clean, html, scss, js))
+gulp.task('dev', gulp.series(clean, html, scss, js, assets, serve, watch))
+gulp.task('build', gulp.series(clean, html, scss, js, assets))
