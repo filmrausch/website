@@ -1,3 +1,33 @@
-footer {
+.footer {
+  padding: 20px;
   color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .col {
+    width: 80%;
+    text-align: center;
+  }
+  &__heading {
+    color: #ffe552;
+  }
+  &__link {
+    color: #ddd;
+  }
+  &__link:hover {
+    color: #ffb866;
+  }
+}
+
+@media screen and (min-width: 699px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    .col {
+      width: 30%;   
+    }
+  }
 }
