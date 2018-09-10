@@ -2,7 +2,6 @@
 @import "../shared/header.scss";
 @import "../shared/footer.scss";
 @import "../shared/main.scss";
-
 .controls {
   width: 100%;
   display: flex;
@@ -47,14 +46,14 @@
 
 .movie {
   display: grid;
-  grid-template: 'poster title' 'description description';
+  grid-template: 'poster title' 'poster special' 'description description';
   grid-template-columns: 33% auto;
   grid-template-rows: auto 1fr;
   box-sizing: border-box;
   padding: 20px;
   margin: 30px 30px 10px;
   width: 90%;
-  grid-column-gap: 15px;
+  grid-column-gap: 20px;
   &__title {
     font: 2em 'Yantramanav';
     font-weight: 700;
@@ -63,9 +62,13 @@
     grid-area: title;
     word-break: break-word;
     &--year {
-      font-size: 0.65em;
-      margin: 0 5px;
+      display: none;
     }
+  }
+  &__details {
+    margin: 0;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, .56);
   }
   &__poster {
     box-shadow: 1px 3px 6px rgba(#331, .24);
@@ -86,14 +89,19 @@
     margin: 0 auto;
   }
   .movie {
-    grid-template: 'poster title' 'poster description';
+    grid-template: 'poster title' 'poster special' 'poster description';
     grid-template-columns: 33% auto;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto 1fr;
     grid-column-gap: 30px;
     padding: 40px;
     &__title {
       margin-top: 10px;
       font-size: 3em;
+      &--year {
+        display: inline-block;
+        font-size: 0.65em;
+        transform: translate(0, -4px);
+      }
     }
     &__description {
       margin-top: 20px;
