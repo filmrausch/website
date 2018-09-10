@@ -2,6 +2,7 @@
 @import "../shared/header.scss";
 @import "../shared/footer.scss";
 @import "../shared/main.scss";
+
 .controls {
   width: 100%;
   display: flex;
@@ -21,6 +22,7 @@
   &__link.active {
     transition: all 0.3s;
     background: #232323;
+    color: #eee;
     box-shadow: 1px 3px 6px rgba(#000, .12);
   }
   &__link:not(.active) {
@@ -49,16 +51,17 @@
   grid-template-columns: 33% auto;
   grid-template-rows: auto 1fr;
   box-sizing: border-box;
-  padding: 30px;
+  padding: 20px;
   margin: 30px 30px 10px;
   width: 90%;
-  grid-column-gap: 25px;
+  grid-column-gap: 15px;
   &__title {
     font: 2em 'Yantramanav';
     font-weight: 700;
     line-height: 1em;
     margin: 0;
     grid-area: title;
+    word-break: break-word;
     &--year {
       font-size: 0.65em;
       margin: 0 5px;
@@ -76,7 +79,7 @@
   }
 }
 
-@media screen and (min-width: 699px) {
+@media screen and (min-width: 769px) {
   .carousel {
     width: 90%;
     max-width: 1024px;
@@ -86,7 +89,8 @@
     grid-template: 'poster title' 'poster description';
     grid-template-columns: 33% auto;
     grid-template-rows: auto 1fr;
-    padding: 40px 30px;
+    grid-column-gap: 30px;
+    padding: 40px;
     &__title {
       margin-top: 10px;
       font-size: 3em;
@@ -95,13 +99,12 @@
       margin-top: 20px;
     }
     &__poster {
-      max-width: calc(100% - 30px);
-      margin: 0 20px 0 10px;
+      max-width: 100%;
     }
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1024px) {
   .controls {
     width: 90%;
     max-width: 1024px;
@@ -110,7 +113,8 @@
       display: none;
     }
     &__link {
-      margin: 0 5px;
+      margin: 0 4px;
+      padding: 9px 7px;
     }
     &__link:not(.active) {
       display: inline;
