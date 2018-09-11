@@ -46,7 +46,7 @@
 
 .movie {
   display: grid;
-  grid-template: 'poster title' 'poster special' 'description description';
+  grid-template: 'poster title' 'poster details' 'quote quote' 'description description';
   grid-template-columns: 33% auto;
   grid-template-rows: auto 1fr;
   box-sizing: border-box;
@@ -69,6 +69,14 @@
     margin: 0;
     font-size: 1.3em;
     color: rgba(0, 0, 0, .56);
+    grid-area: details;
+  }
+  &__quote {
+    margin: 20px 0;
+    padding: 5px 15px;
+    font-style: italic;
+    border-left: 4px solid #fed600;
+    grid-area: quote;
   }
   &__poster {
     box-shadow: 1px 3px 6px rgba(#331, .24);
@@ -78,7 +86,7 @@
   }
   &__description {
     grid-area: description;
-    margin: 30px 0 0;
+    margin: 0;
   }
 }
 
@@ -89,9 +97,9 @@
     margin: 0 auto;
   }
   .movie {
-    grid-template: 'poster title' 'poster special' 'poster description';
+    grid-template: 'poster title' 'poster details' 'poster quote' 'poster description';
     grid-template-columns: 33% auto;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto auto auto 1fr;
     grid-column-gap: 30px;
     padding: 40px;
     &__title {
@@ -103,8 +111,8 @@
         transform: translate(0, -4px);
       }
     }
-    &__description {
-      margin-top: 20px;
+    &__details {
+      margin-bottom: 10px;
     }
     &__poster {
       max-width: 100%;
