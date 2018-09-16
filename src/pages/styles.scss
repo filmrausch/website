@@ -46,7 +46,7 @@
 
 .movie {
   display: grid;
-  grid-template: 'poster title' 'poster details' 'quote quote' 'description description';
+  grid-template: 'poster title' 'poster details' 'intro intro' 'quote quote' 'description description';
   grid-template-columns: 33% auto;
   grid-template-rows: auto 1fr;
   box-sizing: border-box;
@@ -71,11 +71,18 @@
     color: rgba(0, 0, 0, .56);
     grid-area: details;
   }
+  &__intro {
+    margin: 30px 0;
+    background-image: linear-gradient(120deg, #ffe552 0%, #ffcf66 100%);
+    padding: 15px 20px;
+    border-radius: 5px;
+    grid-area: intro;
+  }
   &__quote {
-    margin: 20px 0;
+    margin: 0 0 15px 0;
     padding: 5px 15px;
     font-style: italic;
-    border-left: 4px solid #fed600;
+    border-left: 4px solid #ffe552;
     grid-area: quote;
   }
   &__poster {
@@ -85,8 +92,8 @@
     grid-area: poster;
   }
   &__description {
-    grid-area: description;
     margin: 0;
+    grid-area: description;
   }
 }
 
@@ -97,7 +104,7 @@
     margin: 0 auto;
   }
   .movie {
-    grid-template: 'poster title' 'poster details' 'poster quote' 'poster description';
+    grid-template: 'poster title' 'poster details' 'poster intro' 'poster quote' 'poster description';
     grid-template-columns: 33% auto;
     grid-template-rows: auto auto auto 1fr;
     grid-column-gap: 30px;
@@ -111,11 +118,11 @@
         transform: translate(0, -4px);
       }
     }
-    &__details {
-      margin-bottom: 10px;
-    }
     &__poster {
       max-width: 100%;
+    }
+    &__intro {
+      margin: 20px 0 30px 0;
     }
   }
 }
