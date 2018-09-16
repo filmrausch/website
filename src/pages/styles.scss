@@ -20,7 +20,7 @@
   }
   &__link.active {
     transition: all 0.3s;
-    background: #232323;
+    background: #222;
     color: #eee;
     box-shadow: 1px 3px 6px rgba(#000, .12);
   }
@@ -61,11 +61,16 @@
     margin: 0;
     grid-area: title;
     word-break: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
     &--year {
       display: none;
     }
   }
   &__details {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    overflow: hidden;
     margin: 0;
     font-size: 1.3em;
     color: rgba(0, 0, 0, .56);
