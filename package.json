@@ -19,6 +19,6 @@
     "gulp-sass": "^4.0.1"
   },
   "dependencies": {
-    "gulp-webp": "^3.0.0"
+    "gulp-imagemin": "^4.1.0"
   }
 }
