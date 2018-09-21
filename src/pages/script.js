@@ -3,6 +3,7 @@ const flkty = new Flickity( '.carousel', {
   lazyLoad: 1,
   prevNextButtons: false,
   adaptiveHeight: true,
+  pageDots: false,
 })
 
 flkty.on('select', i => {
