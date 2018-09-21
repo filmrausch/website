@@ -2,3 +2,42 @@
 @import "../../shared/header.scss";
 @import "../../shared/footer.scss";
 @import "../../shared/main.scss";
+.about {
+  width: 90%;
+  max-width: 1024px;
+  margin: 20px auto 0;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  &__heading {
+    font: 3em "Yantramanav";
+    margin: 0;
+    text-align: center;
+    line-height: 1em;
+  }
+  &__text {
+    font-size: 1.1em;
+    width: 100%;
+    align-self: center;
+  }
+  &__image {
+    width: 90%;
+    margin: 20px 0;
+    border-radius: 3px;
+    box-shadow: 1px 3px 6px rgba(#331, .24);
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 50px 30px;
+    &__text {
+      width: 90%;
+    }
+    &__image {
+      width: 80%;
+    }
+  }
+}

@@ -9,4 +9,9 @@ body {
 main {
   background: #3d3d3d;
   padding: 30px 0 100px;
+  .card {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 3px 6px rgba(#000, .24);
+  }
 }
