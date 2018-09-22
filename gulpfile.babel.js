@@ -47,6 +47,7 @@ const js = () =>
     .pipe(gulp.dest(paths.js.dest))
 
 const assets = () =>
+  gulp.src('./src/favicon.ico').pipe(gulp.dest('./dist')) &&
   gulp.src(paths.assets.src)
     .pipe(imagemin())
     .pipe(gulp.dest(paths.assets.dest))
