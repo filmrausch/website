@@ -18,16 +18,16 @@
 
   <main>
     <div class="controls">
-      <button class="controls__button" id="btn-prev">
-        <img src="assets/icons/back.svg">
+      <button class="controls__button" id="btn-prev" aria-label="letzter Film">
+        <img src="assets/icons/back.svg" alt="Pfeil zurück">
       </button>
       <% data.forEach(movie => { %>
       <button class="controls__link">
         <%= ddmm(new Date(movie.date))%>
       </button>
       <% }) %>  
-      <button class="controls__button" id="btn-next">
-        <img src="assets/icons/forward.svg">
+      <button class="controls__button" id="btn-next" aria-label="nächster Film">
+        <img src="assets/icons/forward.svg" alt="Pfeil nach vorne">
       </button>
     </div>
     <div class="carousel">
