@@ -1,13 +1,9 @@
 {
-  "meta": {
-    "term": "Wintersemester 2018/19",
-    "HVs": "Henrike Sommer, Juliane Baatsch und Mark Kvetny"
-  },
   "data": [
     {
       "name": "Codename U.N.C.L.E.",
       "date": "2018-10-09T22:00:00.000Z",
-      "year": 2017,
+      "year": "2017",
       "length": "1h 56min",
       "special": "Kükenkino",
       "lang": "OV",
@@ -21,7 +17,7 @@
     {
       "name": "Arrival",
       "date": "2018-10-16T22:00:00.000Z",
-      "year": 2016,
+      "year": "2016",
       "length": "1h 57min",
       "special": "Opener",
       "lang": "OV",
@@ -35,9 +31,9 @@
     {
       "name": "Moonlight",
       "date": "2018-10-23T22:00:00.000Z",
-      "year": 2016,
+      "year": "2016",
       "length": "1h 51min",
-      "special": "Publikumsspecial",
+      "special": "Publikums Special",
       "lang": "OV",
       "intro": "Ihr habt es so gewollt! Am 24.10 zeigen wir den oscarpremierten Film und werden Chiron begleiten wie er in einem armen Bezirk von Miami aufwächst.",
       "quote": "\"At some point, you gotta decide for yourself who you gonna be. Can't let nobody make that decision for you.\"",
@@ -49,7 +45,7 @@
     {
       "name": "Get out",
       "date": "2018-10-30T23:00:00.000Z",
-      "year": 2017,
+      "year": "2017",
       "length": "1h 44min",
       "special": "Halloween Special",
       "lang": "OV",
@@ -63,9 +59,9 @@
     {
       "name": "Ferris macht blau",
       "date": "2018-11-06T23:00:00.000Z",
-      "year": 1986,
+      "year": "1986",
       "length": "1h 38min",
-      "special": "Analog Special",
+      "special": "",
       "lang": "OV",
       "intro": "Am 07.11 zeigen wir diesen Klassiker und freuen uns, dass man an der Uni ja zum Glück immer blau machen kann. ;)",
       "quote": "\"Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.\"",
@@ -77,7 +73,7 @@
     {
       "name": "The Royal Tenenbaums",
       "date": "2018-11-13T23:00:00.000Z",
-      "year": 2001,
+      "year": "2001",
       "length": "1h 49min",
       "special": "",
       "lang": "OV",
@@ -89,65 +85,9 @@
       "poster": "https://s22.postimg.cc/porzkvt1d/The_Royal_Tenenbaums_Poster.png"
     },
     {
-      "name": "The Walk",
-      "date": "2018-11-20T23:00:00.000Z",
-      "year": 2015,
-      "length": "2h 3min",
-      "special": "3D Special",
-      "lang": "OV",
-      "intro": "Am 21.11 begeben wir uns mit Philippe auf einen Drahtseilakt.",
-      "quote": "\"It's something only a twisted, antisocial, anarchistic, pissed-off malcontent would have anything to do with.\"",
-      "description": "Der französische Hochseilartist Philippe Petit hat hochfliegende Träume: Er will auf einem Drahtseil in Manhattan von einem Twin Tower zum anderen hinüber balancieren. Doch das Unterfangen ist so aufregend, wie es illegal ist, und bedarf deshalb eingehender Planung. Also versammelt er ein internationales Team aus Menschen um sich, die ihm dabei helfen sollen, seine Idee in die Tat umzusetzen. Unter Anleitung seines Mentors Papa Rudy beginnt die Planung, die sich über Jahre hinzieht. Am 7. August 1974 um 7 Uhr morgens ist es schließlich so weit: Petit betritt das ca. 2,5 Zentimeter dicke Drahtseil, um den 417 Meter tiefen Abgrund zwischen den Türmen des World Trade Centers zu überwinden.",
-      "trailerlink": "https://www.youtube.com/watch?v=4W6byFcD5uE",
-      "infolink": "https://www.moviepilot.de/movies/the-walk",
-      "poster": "https://s22.postimg.cc/8bhp602v5/the_walk.jpg"
-    },
-    {
-      "name": "Trapped in the closet",
-      "date": "2018-11-27T23:00:00.000Z",
-      "year": 2005,
-      "length": "1h 31min",
-      "special": "",
-      "lang": "OV",
-      "intro": "Am 28.11 folgen wir R. Kelly durch die Irrungen und Wirrungen des Lebens und tauchen ein in eine unvergessliche hip-hopera.",
-      "quote": "\"Now pause the move because what I'm about to say to y'all is so damn twisted.\"",
-      "description": "Jeder kennt das. Man wacht verkatert auf, bemerkt, dass die Frau, die man sieht, nicht die eigene ist. Noch bevor man das Haus dieser Frau verlassen kann, wird man von ihr in den Kleiderschrank gesperrt, weil ihr Ehemann gerade eintrifft. Und schon ist man gefangen. Gefangen im Kleiderschrank. Oder wie R.Kelly es sagen würde : \"Trapped in the closet\".",
-      "trailerlink": "https://www.youtube.com/watch?v=zFosUj6A22c",
-      "infolink": "https://de.wikipedia.org/wiki/Trapped_in_the_Closet:_Chapters_1%E2%80%9312",
-      "poster": "https://s22.postimg.cc/a3ao0wei9/trapped_in_the_closet.jpg"
-    },
-    {
-      "name": "Boy",
-      "date": "2018-12-04T23:00:00.000Z",
-      "year": 2010,
-      "length": "1h 27min",
-      "special": "",
-      "lang": "OV",
-      "intro": "Am 05.12 muss Boy seinen imaginären Vater mit seinem realen, plötzlich wieder aufgetauchten Vater in Einklang bringen.",
-      "quote": "I don't remember you! You weren't there! You weren't there when he was born! You weren't there when she died! Where were you?",
-      "description": "Es ist 1984 und für den 11-jährigen Jungen “Boy” ist Michael Jackson der Größte. Er lebt gemeinsam mit seinem kleinen Bruder Rocky in Neuseeland. Beide sind sie Flüchtlingskinder und einige Zeit ohne Vater aufgewachsen. Als der Vater nach mehreren Jahren Abwesenheit zurückkehrt, müssen sie die Realität mit ihrem imaginären Fantasie-Vater, den sie in der zwischenzeit kreiert haben, in Einklang bringen.",
-      "trailerlink": "https://www.youtube.com/watch?v=ESD3mlgpSwM",
-      "infolink": "https://www.moviepilot.de/movies/boy",
-      "poster": "https://s22.postimg.cc/lfn9iqkn5/boy_2.jpg"
-    },
-    {
-      "name": "Colonia",
-      "date": "2018-12-11T23:00:00.000Z",
-      "year": 2016,
-      "length": "1h 50min",
-      "special": "Amnesty Kooperation",
-      "lang": "OV",
-      "intro": "In Koorperation mit Amnesty folgen wir Daniel Brühl und Emma Watson in das totalitäre Chile der 70er.",
-      "quote": "\"Deine Tränen helfen Dir nicht. So wie es die Pflicht eines liebenden Vaters ist, werde ich Dich jetzt von den Dämonen, die in Dir sind, befreien.\"",
-      "description": "Chile im Jahr 1973, während des Militärputsches: Das deutsche Paar Lena und Daniel gerät in die Gefangenschaft der chilenischen Militärpolizei. Während Lena bald wieder freikommt, wird Daniel verschleppt. Im Süden des Landes soll er fortan im von der Außenwelt abgeriegelten Dorf Colonia Dignidad leben. Die Siedlung ist Teil eines deutschen Muster-Dorfes, das unter der Führung des Laienpredigers Paul Schäfer gedeihen soll. Als Lena herausfindet, dass der Ort in Wahrheit eine Sekte ist, die mit dem chilenischen Diktator Augusto Pinochet zusammenarbeitet, schleußt sie sich in Colonia Dignidad ein, um Daniel zu befreien",
-      "trailerlink": "https://www.youtube.com/watch?v=UBSMl343fsw",
-      "infolink": "https://www.moviepilot.de/movies/colonia-dignidad",
-      "poster": "https://s22.postimg.cc/lsenotngh/colonia_dignidad.jpg"
-    },
-    {
       "name": "Moana",
-      "date": "2018-12-18T23:00:00.000Z",
-      "year": 2016,
+      "date": "2018-11-20T23:00:00.000Z",
+      "year": "2016",
       "length": "1h 47min",
       "special": "Animationsspecial",
       "lang": "OV",
@@ -159,9 +99,65 @@
       "poster": "https://s22.postimg.cc/fepklmnq9/Moana_official_poster.jpg"
     },
     {
+      "name": "Trapped in the closet",
+      "date": "2018-11-27T23:00:00.000Z",
+      "year": "2005",
+      "length": "1h 31min",
+      "special": "",
+      "lang": "OV",
+      "intro": "Am 28.11 folgen wir R. Kelly durch die Irrungen und Wirrungen des Lebens und tauchen ein in eine unvergessliche hip-hopera.",
+      "quote": "Then he notices the pie on the counter, one slice is missing, now the story's getting scary 'cause he comes to realize: Bridget is allergic to cherrys! ODER \"Now pause the move because what I'm about to say to y'all is so damn twisted.\"",
+      "description": "Jeder kennt das. Man wacht verkatert auf, bemerkt, dass die Frau, die man sieht, nicht die eigene ist. Noch bevor man das Haus dieser Frau verlassen kann, wird man von ihr in den Kleiderschrank gesperrt, weil ihr Ehemann gerade eintrifft. Und schon ist man gefangen. Gefangen im Kleiderschrank. Oder wie R.Kelly es sagen würde : \"Trapped in the closet\".",
+      "trailerlink": "https://www.youtube.com/watch?v=zFosUj6A22c",
+      "infolink": "https://de.wikipedia.org/wiki/Trapped_in_the_Closet:_Chapters_1%E2%80%9312",
+      "poster": "https://s22.postimg.cc/a3ao0wei9/trapped_in_the_closet.jpg"
+    },
+    {
+      "name": "Boy",
+      "date": "2018-12-04T23:00:00.000Z",
+      "year": "2010",
+      "length": "1h 27min",
+      "special": "",
+      "lang": "OV",
+      "intro": "Am 05.12 muss Boy seinen imaginären Vater mit seinem realen, plötzlich wieder aufgetauchten Vater in Einklang bringen.",
+      "quote": "\"I don't remember you! You weren't there! You weren't there when he was born! You weren't there when she died! Where were you?\"",
+      "description": "Es ist 1984 und für den 11-jährigen Jungen “Boy” ist Michael Jackson der Größte. Er lebt gemeinsam mit seinem kleinen Bruder Rocky in Neuseeland. Beide sind sie Flüchtlingskinder und einige Zeit ohne Vater aufgewachsen. Als der Vater nach mehreren Jahren Abwesenheit zurückkehrt, müssen sie die Realität mit ihrem imaginären Fantasie-Vater, den sie in der zwischenzeit kreiert haben, in Einklang bringen.",
+      "trailerlink": "https://www.youtube.com/watch?v=ESD3mlgpSwM",
+      "infolink": "https://www.moviepilot.de/movies/boy",
+      "poster": "https://s22.postimg.cc/lfn9iqkn5/boy_2.jpg"
+    },
+    {
+      "name": "Colonia",
+      "date": "2018-12-11T23:00:00.000Z",
+      "year": "2016",
+      "length": "1h 50min",
+      "special": "Amnesty Kooperation",
+      "lang": "OV",
+      "intro": "In Koorperation mit Amnesty folgen wir Daniel Brühl und Emma Watson in das totalitäre Chile der 70er.",
+      "quote": "\"Deine Tränen helfen Dir nicht. So wie es die Pflicht eines liebenden Vaters ist, werde ich Dich jetzt von den Dämonen, die in Dir sind, befreien.\"",
+      "description": "Chile im Jahr 1973, während des Militärputsches: Das deutsche Paar Lena und Daniel gerät in die Gefangenschaft der chilenischen Militärpolizei. Während Lena bald wieder freikommt, wird Daniel verschleppt. Im Süden des Landes soll er fortan im von der Außenwelt abgeriegelten Dorf Colonia Dignidad leben. Die Siedlung ist Teil eines deutschen Muster-Dorfes, das unter der Führung des Laienpredigers Paul Schäfer gedeihen soll. Als Lena herausfindet, dass der Ort in Wahrheit eine Sekte ist, die mit dem chilenischen Diktator Augusto Pinochet zusammenarbeitet, schleußt sie sich in Colonia Dignidad ein, um Daniel zu befreien",
+      "trailerlink": "https://www.youtube.com/watch?v=UBSMl343fsw",
+      "infolink": "https://www.moviepilot.de/movies/colonia-dignidad",
+      "poster": "https://s22.postimg.cc/lsenotngh/colonia_dignidad.jpg"
+    },
+    {
+      "name": "Hugo Cabret",
+      "date": "2018-12-18T23:00:00.000Z",
+      "year": "2011",
+      "length": "2h 6min",
+      "special": "3D-Special",
+      "lang": "OV",
+      "intro": "Am 19.12 machen wir uns gemeinsam mit Hugo Cabret auf die Suche nach einem Schlüssel und dem Geheimnis, das er verbirgt.",
+      "quote": "\"I'd imagine the whole world was one big machine. Machines never come with any extra parts, you know. They always come with the exact amount they need. So I figured, if the entire world was one big machine, I couldn't be an extra part. I had to be here for some reason. And that means you have to be here for some reason, too.\"",
+      "description": "In Pariser Bahnhof Gare Montparnasse lebt der Junge Hugo Cabret, nachdem sein Vater auf tragische Weise ums Leben gekommen ist. Dessen Vermächtnis scheint sich in einer mechanischen Aufziehpuppe, einem Automaton, zu verbergen, doch der Schlüssel zum Schloss fehlt. Eine Antwort zum Rätsel könnte der ebenso mysteriöse Spielwarenhändler Georges Méliès bereithalten, der im Bahnhof einen Laden unterhält und ein dunkles Geheimnis zu hüten scheint. Hilfe erhält Hugo Cabret unverhofft durch die vorwitzige Isabelle. Diese ist auch vonnöten, denn Gefahren lauern auf der Suche nach des Rätsels Lösung immer wieder.",
+      "trailerlink": "https://www.youtube.com/watch?v=n_cLHAgxVrU",
+      "infolink": "https://www.moviepilot.de/movies/die-entdeckung-des-hugo-cabret",
+      "poster": "https://i.postimg.cc/fyRWds1L/hugoposter.jpg"
+    },
+    {
       "name": "The Big Sick",
       "date": "2019-01-08T23:00:00.000Z",
-      "year": 2017,
+      "year": "2017",
       "length": "1h 59min",
       "special": "",
       "lang": "OV",
@@ -173,9 +169,9 @@
       "poster": "https://s22.postimg.cc/42cz3spb5/the_big_sick.jpg"
     },
     {
-      "name": "Tomorrow, die Welt ist voller Lösungen",
+      "name": "Tomorrow - Die Welt ist voller Lösungen",
       "date": "2019-01-15T23:00:00.000Z",
-      "year": 2016,
+      "year": "2016",
       "length": "1h 58min",
       "special": "Doku Special",
       "lang": "deutsch",
@@ -189,7 +185,7 @@
     {
       "name": "Battle of the Sexes",
       "date": "2019-01-22T23:00:00.000Z",
-      "year": 2017,
+      "year": "2017",
       "length": "2h 4min",
       "special": "",
       "lang": "OV",
@@ -200,5 +196,9 @@
       "infolink": "https://www.moviepilot.de/movies/battle-of-the-sexes",
       "poster": "https://s22.postimg.cc/a3ao0vrcx/battle_of_the_sexes.jpg"
     }
-  ]
+  ],
+  "meta": {
+    "semester": "Sommersemester 18/19",
+    "HVs": "Henrike Sommer, Juliana Baatsch und Mark Kvetny"
+  }
 }
