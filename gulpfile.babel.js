@@ -4,7 +4,6 @@ import del from 'del'
 import browserSync from 'browser-sync'
 import sass from 'gulp-sass'
 import babel from 'gulp-babel'
-import imagemin from 'gulp-imagemin'
 import movies from './movies.json'
 import ddmm from './util/ddmm'
 
@@ -49,7 +48,6 @@ const js = () =>
 const assets = () =>
   gulp.src('./src/favicon.ico').pipe(gulp.dest('./dist')) &&
   gulp.src(paths.assets.src)
-    .pipe(imagemin())
     .pipe(gulp.dest(paths.assets.dest))
 
 const reload = done => {
