@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp build"
+    "build": "gulp build",
+    "build:prod": "gulp build:prod"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
