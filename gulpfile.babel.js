@@ -31,18 +31,16 @@ const paths = {
   }
 }
 
-const html = movies =>
+const html = async () => {
+
+  const movies = process.env.NODE_ENV === 'production'
+    ? (await axios.get('http://filmrausch.hdm-stuttgart.de/api')).data
+    : movieTestData
+
   gulp.src(paths.html.src)
     .pipe(ejs({ ...movies, ddmm }, {}, { ext: '.html' }))
     .pipe(gulp.dest(paths.html.dest))
-
-
-const htmlProd = async () => {
-  const movies = await axios.get('http://filmrausch.hdm-stuttgart.de/api')
-  return html(movies.data)
 }
-
-const htmlDev = () => html(movieTestData)
 
 const scss = () =>
   gulp.src(paths.sass.src)
@@ -82,6 +80,5 @@ const watch = () => {
   gulp.watch(paths.assets.src, gulp.series(assets, reload))
 }
 
-gulp.task('dev', gulp.series(clean, htmlDev, scss, js, assets, serve, watch))
-gulp.task('build', gulp.series(clean, htmlDev, scss, js, assets))
-gulp.task('build:prod', gulp.series(clean, htmlProd, scss, js, assets))
+gulp.task('dev', gulp.series(clean, html, scss, js, assets, serve, watch))
+gulp.task('build', gulp.series(clean, html, scss, js, assets))
