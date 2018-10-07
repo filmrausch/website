@@ -43,6 +43,15 @@
         <p class="movie__quote"><%= movie.quote %></p>
         <img class="movie__poster" data-flickity-lazyload-src="<%= movie.poster %>" alt="poster <%= movie.name %>">
         <p class="movie__description"><%= movie.description %></p>
+
+        <div class="actions">
+          <a target="_blank" href="<%= movie.trailerlink %>">
+            <button class="actions__button">Trailer ansehen</button>
+          </a>
+          <a target="_blank" href="<%= movie.infolink %>">
+            <button class="actions__button">mehr Infos</button>
+          </a>
+        </div>
       </div>
       <% }) %>
     </div>

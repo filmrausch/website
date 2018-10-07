@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Yantramanav:700|Open+Sans');
+@import url("https://fonts.googleapis.com/css?family=Yantramanav:700|Open+Sans");
 @import "../shared/header.scss";
 @import "../shared/footer.scss";
 @import "../shared/main.scss";
@@ -22,7 +22,7 @@
     transition: all 0.3s;
     background: #222;
     color: #eee;
-    box-shadow: 1px 3px 6px rgba(#000, .12);
+    box-shadow: 1px 3px 6px rgba(#000, 0.12);
   }
   &__link:not(.active) {
     display: none;
@@ -40,7 +40,13 @@
 
 .movie {
   display: grid;
-  grid-template: 'poster title' 'poster details' 'intro intro' 'quote quote' 'description description';
+  grid-template:
+    "poster title"
+    "poster details"
+    "intro intro"
+    "quote quote"
+    "description description"
+    "actions actions";
   grid-template-columns: 33% auto;
   grid-template-rows: auto 1fr;
   box-sizing: border-box;
@@ -49,7 +55,7 @@
   width: 90%;
   grid-column-gap: 20px;
   &__title {
-    font: 2em 'Yantramanav';
+    font: 2em "Yantramanav";
     font-weight: 700;
     line-height: 1em;
     margin: 0;
@@ -67,7 +73,7 @@
     overflow: hidden;
     margin: 0;
     font-size: 1.3em;
-    color: rgba(0, 0, 0, .56);
+    color: rgba(0, 0, 0, 0.56);
     grid-area: details;
   }
   &__intro {
@@ -85,7 +91,7 @@
     grid-area: quote;
   }
   &__poster {
-    box-shadow: 1px 3px 6px rgba(#331, .24);
+    box-shadow: 1px 3px 6px rgba(#331, 0.24);
     border-radius: 3px;
     max-width: 100%;
     grid-area: poster;
@@ -93,6 +99,27 @@
   &__description {
     margin: 0;
     grid-area: description;
+  }
+
+  .actions {
+    grid-area: actions;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+    &__button {
+      cursor: pointer;
+      color: #f58114;
+      font-size: 1em;
+      background: #fff;
+      border: none;
+      padding: 10px;
+      margin-left: 5px;
+      border-radius: 3px;
+    }
+    &__button:hover {
+      background: rgba(#f58114, 0.12);
+    }
   }
 }
 
@@ -103,7 +130,13 @@
     margin: 0 auto;
   }
   .movie {
-    grid-template: 'poster title' 'poster details' 'poster intro' 'poster quote' 'poster description';
+    grid-template:
+      "poster title"
+      "poster details"
+      "poster intro"
+      "poster quote"
+      "poster description"
+      "poster actions";
     grid-template-columns: 33% auto;
     grid-template-rows: auto auto auto 1fr;
     grid-column-gap: 30px;
@@ -122,6 +155,9 @@
     }
     &__intro {
       margin: 20px 0 30px 0;
+    }
+    .actions {
+      margin-bottom: -20px;
     }
   }
 }
