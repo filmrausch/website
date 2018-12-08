@@ -22,7 +22,7 @@
     transition: all 0.3s;
     background: #222;
     color: #eee;
-    box-shadow: 1px 3px 6px rgba(#000, 0.12);
+    box-shadow: 1px 10px 20px rgba(#000, 0.12);
   }
   &__link:not(.active) {
     display: none;
@@ -91,7 +91,7 @@
     grid-area: quote;
   }
   &__poster {
-    box-shadow: 1px 3px 6px rgba(#331, 0.24);
+    box-shadow: 0px 10px 30px 0px rgba(#331, 0.24);
     border-radius: 3px;
     max-width: 100%;
     grid-area: poster;
