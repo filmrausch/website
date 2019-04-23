@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/about/styles.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Filmrausch | about</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/about/styles.css">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <title>Filmrausch | about</title>
-</head>
+  <body>
+    <%- include('../../shared/header.ejs') %>
 
-<body>
+    <main>
+      <div class="card about">
+        <h2 class="about__heading">Wir sind das Filmrausch-Team!</h2>
+        <p class="about__text">
+          Du liebst Filme? Du kannst gar nicht genug davon bekommen? Sehr gut,
+          wir auch nicht! Deshalb stellen wir für die Studierenden der HdM in
+          jedem Semester 14 Vorstellungen auf die Beine: Um all die Filme zu
+          zeigen, die man schon immer einmal sehen wollte, immer wieder sehen
+          kann oder neu entdecken möchte. Wir freuen uns über jeden Gast.
+        </p>
+        <img
+          class="about__image"
+          src="/assets/images/teambild_ws1819.jpg"
+          alt="team gruppenfoto"
+        />
+        <p class="about__text">
+          Du willst bei uns mitmachen? Sehr gut! Dann komm einfach Mittwoch um
+          18:30 ins Treppen­studio vorbei oder bleib nach dem Film etwas länger
+          da und sprich uns an. Wir freuen uns über jeden Zuwachs!
+        </p>
+        <em class="about__text">- Das Filmrausch-Team</em>
+      </div>
+    </main>
 
-  <%- include('../../shared/header.ejs') %>
-
-  <main>
-    <div class="card about">
-      <h2 class="about__heading">Wir sind das Filmrausch-Team!</h2>
-      <p class="about__text">Du liebst Filme? Du kannst gar nicht genug davon bekommen? Sehr gut, wir auch nicht!
-        Deshalb stellen wir für
-        die Studierenden der HdM in jedem Semester 14 Vorstellungen auf die Beine: Um all die Filme zu zeigen, die
-        man
-        schon immer einmal sehen wollte, immer wieder sehen kann oder neu entdecken möchte. Wir freuen uns über jeden
-        Gast.</p>
-      <img class="about__image" src="/assets/images/teambild_ws1819.jpg" alt="team gruppenfoto"/>
-      <p class="about__text">Du willst bei uns mitmachen? Sehr gut! Dann komm einfach Mittwoch um 18:30 ins
-        Treppen­studio vorbei oder
-        bleib nach dem Film etwas länger da und sprich uns an. Wir freuen uns über jeden Zuwachs!</p>
-      <em class="about__text">- Das Filmrausch-Team</em>
-    </div>
-  </main>
-
-  <%- include('../../shared/footer.ejs') %>
-
-</body>
-
+    <%- include('../../shared/footer.ejs') %>
+  </body>
 </html>

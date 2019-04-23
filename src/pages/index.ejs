@@ -1,69 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Filmrausch: das Studentenkino der Hochschule der Medien Stuttgart."
+    />
+    <link
+      rel="preload"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <title>Filmrausch</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Filmrausch: das Studentenkino der Hochschule der Medien Stuttgart.">
-  <link rel="preload" href="https://unpkg.com/flickity@2/dist/flickity.min.css" as="style">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-  <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <title>Filmrausch</title>
-</head>
+  <body>
+    <%- include('../shared/header.ejs') %>
 
-<body>
-  
-  <%- include('../shared/header.ejs') %>
-
-  <main>
-    <div class="controls">
-      <button class="controls__button" id="btn-prev" aria-label="letzter Film">
-        <img src="assets/icons/back.svg" alt="Pfeil zurück">
-      </button>
-      <% data.forEach(movie => { %>
-      <button class="controls__link">
-        <%= ddmm(new Date(movie.date))%>
-      </button>
-      <% }) %>  
-      <button class="controls__button" id="btn-next" aria-label="nächster Film">
-        <img src="assets/icons/forward.svg" alt="Pfeil nach vorne">
-      </button>
-    </div>
-    <div class="carousel">
-      <% data.forEach(movie => { %>
-      <div class="movie card">
-        <h2 class="movie__title">
-           <span class="movie__title--title"><%= movie.name %></span>
-           <span class="movie__title--year">(<%= movie.year %>)</span>
-        </h2>
-        <p class="movie__details"><%= movie.special %> <%= movie.lang %></p>
-        <p class="movie__intro"><%= movie.intro %></p>
-        <p class="movie__quote"><%= movie.quote %></p>
-        <img class="movie__poster" data-flickity-lazyload-src="<%= movie.poster %>" alt="poster <%= movie.name %>">
-        <p class="movie__description"><%= movie.description %></p>
-
-        <div class="actions">
-          <a target="_blank" href="<%= movie.trailerlink %>">
-            <button class="actions__button">Trailer ansehen</button>
-          </a>
-          <a target="_blank" href="<%= movie.infolink %>">
-            <button class="actions__button">mehr Infos</button>
-          </a>
-        </div>
+    <main>
+      <div class="controls">
+        <button
+          class="controls__button"
+          id="btn-prev"
+          aria-label="letzter Film"
+        >
+          <img src="assets/icons/back.svg" alt="Pfeil zurück" />
+        </button>
+        <% data.forEach(movie => { %>
+        <button class="controls__link">
+          <%= ddmm(new Date(movie.date))%>
+        </button>
+        <% }) %>
+        <button
+          class="controls__button"
+          id="btn-next"
+          aria-label="nächster Film"
+        >
+          <img src="assets/icons/forward.svg" alt="Pfeil nach vorne" />
+        </button>
       </div>
-      <% }) %>
-    </div>
-  </main>
+      <div class="carousel">
+        <% data.forEach(movie => { %>
+        <div class="movie card">
+          <h2 class="movie__title">
+            <span class="movie__title--title"><%= movie.name %></span>
+            <span class="movie__title--year">(<%= movie.year %>)</span>
+          </h2>
+          <p class="movie__details"><%= movie.special %> <%= movie.lang %></p>
+          <p class="movie__intro"><%= movie.intro %></p>
+          <p class="movie__quote"><%= movie.quote %></p>
+          <img
+            class="movie__poster"
+            data-flickity-lazyload-src="<%= movie.poster %>"
+            alt="poster <%= movie.name %>"
+          />
+          <p class="movie__description"><%= movie.description %></p>
 
-  <%- include('../shared/footer.ejs') %>
-</body>
+          <div class="actions">
+            <a target="_blank" href="<%= movie.trailerlink %>">
+              <button class="actions__button">Trailer ansehen</button>
+            </a>
+            <a target="_blank" href="<%= movie.infolink %>">
+              <button class="actions__button">mehr Infos</button>
+            </a>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </main>
 
-<script>
-  var dates = <%-JSON.stringify(data.map(movie => movie.date))%>
-</script>
-<script src="https://unpkg.com/flickity@2.1.2/dist/flickity.pkgd.min.js"></script>
-<script src="script.js"></script>
+    <%- include('../shared/footer.ejs') %>
+  </body>
 
+  <script>
+    var dates = <%-JSON.stringify(data.map(movie => movie.date))%>
+  </script>
+  <script src="https://unpkg.com/flickity@2.1.2/dist/flickity.pkgd.min.js"></script>
+  <script src="script.js"></script>
 </html>
