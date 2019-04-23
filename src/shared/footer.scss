@@ -44,6 +44,7 @@
   .footer {
     .row {
       flex-direction: row;
+      align-items: flex-start;
       justify-content: space-between;
       width: 90%;
       max-width: 1024px;
