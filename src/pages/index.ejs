@@ -62,7 +62,9 @@
             data-flickity-lazyload-src="<%= movie.poster %>"
             alt="poster <%= movie.name %>"
           />
-          <p class="movie__description"><%= movie.description %></p>
+          <div class="movie__description">
+            <%- movie.description %>
+          </div>
 
           <div class="actions">
             <a target="_blank" href="<%= movie.trailerlink %>">
